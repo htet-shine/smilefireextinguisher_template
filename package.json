@@ -1,0 +1,15 @@
+{
+  "name": "template_smilefireextinguisher.com_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Htet Shine Aung",
+  "license": "ISC",
+  "homepage": "https://htet-shine.github.io/smilefireextinguisher_template",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
