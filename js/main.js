@@ -18,10 +18,25 @@ const mainNavigation = () => {
 
 		const navToggle = document.querySelector('.nav-toggle');
 		const navMenu = document.querySelector('ul.main-nav');
+		const navDimmer = document.querySelector('.dimmer');
 
 		navToggle.addEventListener('click', () => {
 
 			navMenu.classList.toggle('mobile-active');
+
+			navToggle.classList.toggle('active');
+
+			navDimmer.classList.toggle('active');
+
+		});
+
+		navDimmer.addEventListener('click', () => {
+
+			navMenu.classList.remove('mobile-active');
+
+			navToggle.classList.remove('active');
+
+			navDimmer.classList.remove('active');
 
 		});
 
