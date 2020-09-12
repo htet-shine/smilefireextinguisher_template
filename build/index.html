@@ -12,6 +12,18 @@
 	  <script src="js/jquery.min.js"></script>
 	  <script src="js/lightbox.min.js"></script>
 
+	  <script>
+	  	$(window).on('scroll', function () {
+	  		if ($(window).scrollTop()) {
+	  			$('.main-navbar').addClass('navbar-sticky');
+	  			$('.promo-header').addClass('non-stick');
+	  		} else {
+	  			$('.main-navbar').removeClass('navbar-sticky');
+	  			$('.promo-header').removeClass('non-stick');	
+	  		}
+	  	});
+	  </script>
+
 	  <title>Myat Noe Lay Co., Ltd.</title>
 	</head>
 	<body>
@@ -159,114 +171,116 @@
 			<!-- Nav End -->
 		</header>
 
-		<!-- <div class="test"><h1>Hello</h1></div> -->
-		<div class="jumbotron jumbotron-fluid">
-		  <div class="container">
-		    <h1 class="display-4">Welcome to Smile</h1>
-		    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-		  </div>
-		</div>
+		<main class="main-body home">
+			<!-- <div class="test"><h1>Hello</h1></div> -->
+			<div class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			    <h1 class="display-4">Welcome to Smile</h1>
+			    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+			  </div>
+			</div>
 
-		<section class="featured-items-section">
-			
-			<div class="container-fluid">
-				<div class="featured-items-wrapper">
+			<section class="featured-items-section">
+				
+				<div class="container-fluid">
+					<div class="featured-items-wrapper">
 
-					<div class="row">
-						<div class="col-md-6 col-lg-4">
-							<div class="featured-items-card">
-								<div class="featured-item-header">
-									<img src="images/sample2.png" alt="">
+						<div class="row">
+							<div class="col-md-6 col-lg-4">
+								<div class="featured-items-card">
+									<div class="featured-item-header">
+										<img src="images/sample2.png" alt="">
+									</div>
+									<div class="featured-item-body">
+										<h1>Featured Item Name</h1>
+										<p>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+										</p>
+									</div>
+									<div class="featured-item-cta">
+										<a href="#">Learn More</a>
+									</div>
 								</div>
-								<div class="featured-item-body">
-									<h1>Featured Item Name</h1>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-									</p>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="featured-items-card">
+									<div class="featured-item-header">
+										<img src="images/sample2.png" alt="">
+									</div>
+									<div class="featured-item-body">
+										<h1>Featured Item Name</h1>
+										<p>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+										</p>
+									</div>
+									<div class="featured-item-cta">
+										<a href="#">Learn More</a>
+									</div>
 								</div>
-								<div class="featured-item-cta">
-									<a href="#">Learn More</a>
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<div class="featured-items-card">
+									<div class="featured-item-header">
+										<img src="images/sample2.png" alt="">
+									</div>
+									<div class="featured-item-body">
+										<h1>Featured Item Name</h1>
+										<p>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+										</p>
+									</div>
+									<div class="featured-item-cta">
+										<a href="#">Learn More</a>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="featured-items-card">
-								<div class="featured-item-header">
-									<img src="images/sample2.png" alt="">
-								</div>
-								<div class="featured-item-body">
-									<h1>Featured Item Name</h1>
+
+					</div>
+				</div>
+				
+			</section>
+
+			<section class="home-service">
+				<div class="container-fluid">
+					<!-- <div class="delivery-home-text">
+						<h1>Door-to-Door Devlivery</h1>
+						<p>Give us a call and it'll be on your doorstep in no time</p>
+					</div> -->
+					<div class="home-service-graphic">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="graphic-container">
+									<i class="far fa-check-circle"></i>
+									<h1>Quality</h1>
 									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 									</p>
-								</div>
-								<div class="featured-item-cta">
-									<a href="#">Learn More</a>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="featured-items-card">
-								<div class="featured-item-header">
-									<img src="images/sample2.png" alt="">
-								</div>
-								<div class="featured-item-body">
-									<h1>Featured Item Name</h1>
+							<div class="col-md-4">
+								<div class="graphic-container">
+									<i class="fas fa-truck"></i>
+									<h1>Delivery</h1>
 									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 									</p>
 								</div>
-								<div class="featured-item-cta">
-									<a href="#">Learn More</a>
+							</div>
+							<div class="col-md-4">
+								<div class="graphic-container">
+									<i class="fas fa-chalkboard-teacher"></i>
+									<h1>Training</h1>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
-			</div>
-			
-		</section>
-
-		<section class="home-service">
-			<div class="container-fluid">
-				<!-- <div class="delivery-home-text">
-					<h1>Door-to-Door Devlivery</h1>
-					<p>Give us a call and it'll be on your doorstep in no time</p>
-				</div> -->
-				<div class="home-service-graphic">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="graphic-container">
-								<i class="far fa-check-circle"></i>
-								<h1>Quality</h1>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="graphic-container">
-								<i class="fas fa-truck"></i>
-								<h1>Delivery</h1>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="graphic-container">
-								<i class="fas fa-chalkboard-teacher"></i>
-								<h1>Training</h1>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 
 		<footer>
 			<div class="footer-wrapper">
