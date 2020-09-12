@@ -12,6 +12,18 @@
 	  <script src="js/jquery.min.js"></script>
 	  <script src="js/lightbox.min.js"></script>
 
+	  <script>
+	  	$(window).on('scroll', function () {
+	  		if ($(window).scrollTop()) {
+	  			$('.main-navbar').addClass('navbar-sticky');
+	  			$('.promo-header').addClass('non-stick');
+	  		} else {
+	  			$('.main-navbar').removeClass('navbar-sticky');
+	  			$('.promo-header').removeClass('non-stick');	
+	  		}
+	  	});
+	  </script>
+
 	  <title>Myat Noe Lay Co., Ltd.</title>
 	</head>
 	<body>
@@ -159,7 +171,7 @@
 			<!-- Nav End -->
 		</header>
 
-		<main class="main-body">
+		<main class="main-body home">
 			<section class="no-page-container">
 				<div class="container">
 					<div class="no-page">
