@@ -131,10 +131,10 @@ nav.main-navbar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: auto;
-  display: flex;
   background: var(--white);
+	width: 100%;
+	height: autos;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0 1rem;
@@ -184,7 +184,7 @@ ul.main-nav  a.navlink::before {
 	height: 100%;
 	background: var(--primary-dark-green);
 	transform: translateY(-135%);
-	transition: .3s ease-out;
+	transition: .4s ease-out;
 	z-index: -1;
 }
 ul.main-nav > li.navitem > a > i {
@@ -302,12 +302,10 @@ ul.main-nav a.navlink:hover i{
 		padding: .5rem 1rem;
 	}
 	ul.main-nav {
-		/*display: none !important;*/
 		position: absolute;
 		top: 100%;
 		left: 0;
 		width: 100%;
-		/*height: 80vh;*/
 		background: var(--white);
 		align-items: flex-start !important;
 		flex-direction: column;
@@ -350,7 +348,12 @@ ul.main-nav a.navlink:hover i{
 	}
 	.megamenu {
 		position: relative;
-		display: none;
+		height: 180px;
+		overflow-y: scroll;
+		/*-webkit-overflow-scrolling: touch;*/
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
 	  padding: 1rem 2rem;
 	  box-shadow: none;
 	  border-top: none;
@@ -358,6 +361,11 @@ ul.main-nav a.navlink:hover i{
 	}
 	.mega-menu-section {
 		margin-bottom: .5rem;
+	}
+	.mega-more-products {
+		text-align: right;
+		margin: 0;
+		min-width: 35%;
 	}
 }
 
