@@ -1,15 +1,30 @@
 $(document).ready( function () {
 
 	if (window.matchMedia('(max-width: 991.8px)').matches) {
-    $(".drop-item").click( function () {
-    	$(".megamenu").addClass("mobile");
-    	$(".megamenu.mobile", this).not(".in .megamenu.mobile").stop(true, true).slideToggle(300); 
+    $(".drop-item").click( function (e) {
+
+    	var this_link = $(this);
+    	e.preventDefault();
+    	this_link.children('.megamenu').slideToggle(400);
+    	$(".drop-item").not(this_link).children('.megamenu').slideUp(400);
+    	// $(".megamenu", this).not(".in .megamenu").stop(true, true).slideToggle(400); 
+
     });
   } else {
-    $(".drop-item").hover( function () {
-    	$(".megamenu", this).not(".in .megamenu").stop(true, true).slideToggle(300);
+
+    $(".drop-item").hover( function (e) {
+    	e.preventDefault();
+    	$(this).children('.megamenu').slideToggle(400);
+    	$(".drop-item").not($(this)).children('.megamenu').slideUp(100);
     });
+
 	}
+	$(".nav-toggle").click(function () {
+		$(".megamenu").slideUp(300);
+	});
+	$(".dimmer").click(function () {
+		$(".megamenu").slideUp(300);
+	});
 });
 
 const mainNavigation = () => {
