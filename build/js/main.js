@@ -1,10 +1,9 @@
 $(document).ready( function () {
 
 	if (window.matchMedia('(max-width: 991.8px)').matches) {
-    $(".drop-item").click( function (e) {
+    $(".drop-item").click( function () {
 
     	var this_link = $(this);
-    	e.preventDefault();
     	this_link.children('.megamenu').slideToggle(400);
     	$(".drop-item").not(this_link).children('.megamenu').slideUp(400);
     	// $(".megamenu", this).not(".in .megamenu").stop(true, true).slideToggle(400); 
@@ -12,8 +11,7 @@ $(document).ready( function () {
     });
   } else {
 
-    $(".drop-item").hover( function (e) {
-    	e.preventDefault();
+    $(".drop-item").hover( function () {
     	$(this).children('.megamenu').slideToggle(400);
     	$(".drop-item").not($(this)).children('.megamenu').slideUp(100);
     });
