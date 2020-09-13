@@ -193,6 +193,7 @@ ul.main-nav a.navlink {
 	font-size: 1rem;
   transition: .5s ease;
   z-index: 2;
+  cursor: pointer;
 }
 ul.main-nav  a.navlink::before {
 	content: '';
