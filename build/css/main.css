@@ -7,17 +7,17 @@
 	--primary-off-green: #2AAE55;
 	--primary-light-green: #50FD89;
 
-	--yellow: #FFF128;
-	--light-yellow: #FFFD7F;
-	--dark-yellow: #B4B208;
+	--yellow: #FCCA00;
+	--light-yellow: #FFE167;
+	--dark-yellow: #A0861F;
 
 	--purple: #670DB3;
 	--light-purple: #D4A2FF;
 	--dark-purple: #530D8F;
 
-	--blue: #2088E1;
+	--blue: #257BEF;
 	--light-blue: #5BB3FF;
-	--dark-blue: #164165;
+	--dark-blue: #16588F;
 
 	--white: #FFFFFF;
 	--off-white: #E8E8E8;
@@ -29,6 +29,16 @@
 
 	--black: #000000;
 	--matte-black: #3A3A3A;
+
+	--laravel:#ef3b2d;
+	--php:#484c89;
+	--html:#f16529;
+	--wordpress:#0087be;
+	--github: #211f1f;
+	--linkedin: #006192;
+	--twitter: #1DA1F2;
+	--facebook: #1778f2;
+	--youtube: #FF0000;
 }
 /*----------Imports and Color Schemes End----------*/
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -100,6 +110,15 @@ h1, h2, h3, h4, h5, p, i, span {
  margin: 0;
  padding: 0;
  color: var(--matte-black);
+}
+a.facebook:hover > i {
+	color: var(--facebook);
+}
+a.twitter:hover > i {
+	color: var(--twitter);
+}
+a.youtube:hover > i {
+	color: var(--youtube);
 }
 /*----------Global Styles End----------*/
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -459,8 +478,9 @@ section.featured-items-section {
 /*----------Featured Items End----------*/
 
 .home-service {
-	background: rgb(255,226,33);
-	background: linear-gradient(0deg, rgba(255,226,33,1) 0%, rgba(255,241,40,1) 80%);
+	/*background: var(--matte-black);*/
+	background: rgb(56,56,56);
+	background: linear-gradient(180deg, rgba(56,56,56,1) 50%, rgba(47,47,47,1) 50%);
 	padding: 5rem;
 }
 .home-service-graphic .graphic-container {
@@ -468,7 +488,7 @@ section.featured-items-section {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 1rem;
+	padding: 0 5rem;
 }
 .home-service-graphic .graphic-container i {
 	font-size: 5rem;
@@ -481,9 +501,21 @@ section.featured-items-section {
 .home-service-graphic .graphic-container p {
 	text-align: justify;
 }
+.graphic-container > i, .graphic-container > h1, .graphic-container > p {
+	color: var(--yellow);
+}
+@media screen and (max-width: 1440px) {
+	.home-service {
+		padding: 5rem 1rem;
+	}
+	.home-service-graphic .graphic-container {
+		padding: 0 1rem;
+	}
+}
 @media screen and (max-width: 767.8px) {
 	.home-service {
 		padding: 3rem;
+		background: linear-gradient(-90deg, rgba(56,56,56,1) 50%, rgba(47,47,47,1) 50%);
 	}
 	.home-service-graphic .graphic-container {
 		margin-bottom: 3rem;
@@ -523,6 +555,7 @@ footer {
 	color: var(--matte-black);
 	padding-right: 1rem;
 	font-size: 1.5rem;
+	transition: .4s ease;
 }
 .footer-section-box {
 	display: flex;
